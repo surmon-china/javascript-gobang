@@ -202,7 +202,7 @@
 
 			// 判断输赢
 			checkReferee(x, y, role) {
-				if (!x || !y || !role) return
+				if ((x == undefined) || (y == undefined) || (role == undefined)) return
 
 				// 连杀分数
 				let countContinuous = 0
